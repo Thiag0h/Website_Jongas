@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Informações */
+:root {
+    --cor01: #191427;
+    --cor02: #381b74; 
+    --cor03: #603da7;
+    --cor04: #8b72c9;
+}
+
+:root {
+    --font01: "Mulish", sans-serif;
+    --font02: "Pixelify Sans", sans-serif;
+    --font03: "Work Sans", sans-serif;
+    --font04: "Press Start 2P", system-ui;
+}
+
+:root {
+    --cursor-default: url(../Imagens/Mouse.png), auto;
+    --cursor-pointer: url(../Imagens/MouseClick.png), auto;
+}
+
+/* Interface */
+
+* {
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
+    transition: scroll 0.2s linear;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+body {
+    background-image: url(../Imagens/backgroundapenas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: monospace;
+    flex-direction: column;
+    color: white;
+    padding-top: 250px;
+}
+
+a, button {
+    cursor: var(--cursor-pointer);
+
+}
+
+html {
+    cursor: var(--cursor-default);
+}
+
+/* FORMULÁRIO DE PHP*/
+.form-container {
+    max-width: 650px;
+    width: 85%;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background-color: rgba(25, 20, 39, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(96, 61, 167, 0.3);
+    border: 1px solid var(--cor02);
+}
+
+.form-container h2 {
+    font-family: var(--font02);
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+}
+
+textarea {
+    width: 100%;
+    height: 150px; /* aumenta a altura */
+    background-color: rgba(25, 20, 39, 0.8);
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--cor02);
+    color: white;
+}
+
+
+#nome {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--cor02);
+    background-color: rgba(25, 20, 39, 0.8);
+    color: white;
+    font-family: var(--font01);
+}
+
+#imagem {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--cor02);
+    background-color: rgba(25, 20, 39, 0.8);
+    color: white;
+    font-family: var(--font01);
+}
+
+.submit-btn {
+    background-color: var(--cor03);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font01);
+    font-size: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+.submit-btn:hover {
+    background-color: var(--cor03);
+    transform: scale(1.05);
+    }
